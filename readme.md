@@ -59,10 +59,51 @@ The core of the application is the Quiz interface. It features dynamic content, 
 ### 3.5 Results and Feedback
 Upon completing the quiz, the user is presented with the Results screen. It displays the total score (e.g., 50 points), the percentage of correct answers, and a personalized message based on their performance (e.g., "Good job! You know your history well."). Options to try again or return to the main menu are provided.
 
+## 4. Folder Structure
 
+The project follows a standard Android project structure, with additional organization for Jetpack Compose and MVVM components:
+TunisiaHeritageQuest/
+├── app/
+│ ├── build.gradle
+│ ├── src/
+│ │ ├── main/
+│ │ │ ├── AndroidManifest.xml
+│ │ │ ├── java/com/example/myapplication/
+│ │ │ │ ├── MainActivity.kt
+│ │ │ │ ├── navigation/
+│ │ │ │ │ └── NavGraph.kt
+│ │ │ │ ├── screens/
+│ │ │ │ │ ├── SplashScreen.kt
+│ │ │ │ │ ├── MainMenuScreen.kt
+│ │ │ │ │ ├── HowToPlayScreen.kt
+│ │ │ │ │ ├── CategorySelectionScreen.kt
+│ │ │ │ │ ├── QuizConfigScreen.kt
+│ │ │ │ │ ├── QuizScreen.kt
+│ │ │ │ │ └── ResultsScreen.kt
+│ │ │ │ ├── model/
+│ │ │ │ │ ├── Question.kt
+│ │ │ │ │ └── QuestionType.kt
+│ │ │ │ ├── viewmodel/
+│ │ │ │ │ └── QuizViewModel.kt
+│ │ │ │ └── ui/theme/
+│ │ │ │ ├── Color.kt
+│ │ │ │ ├── Theme.kt
+│ │ │ │ └── Typography.kt
+│ │ │ └── res/
+│ │ │ ├── drawable/
+│ │ │ │ ├── bizerte.png
+│ │ │ │ ├── roman_column.png
+│ │ │ │ └── ic_launcher_foreground.png
+│ │ │ ├── layout/
+│ │ │ └── values/
+│ │ │ ├── colors.xml
+│ │ │ ├── strings.xml
+│ │ │ └── themes.xml
+├── build.gradle
+└── settings.gradle
 ---
 
-## 4. Conclusion
+## 5. Conclusion
 The Tunisia Heritage Quest successfully demonstrates the implementation of a fully functional, modular Android application using Jetpack Compose. By combining a modern, responsive user interface with customizable gameplay mechanics, it offers an effective and enjoyable educational tool for discovering Tunisia's historical sites.
 
 ---
