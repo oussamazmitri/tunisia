@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MyApplication" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- Set the background drawable shown during app startup -->
+        <item name="android:windowBackground">@drawable/splash_screen_bg</item>
+        <item name="android:statusBarColor">@color/mediterranean_blue</item>
+        <item name="android:navigationBarColor">@color/mediterranean_blue</item>
+    </style>
+</resources>
